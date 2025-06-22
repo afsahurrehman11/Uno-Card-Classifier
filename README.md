@@ -8,13 +8,32 @@
 ---
 
 ### <span style="color: blue;">📸 Dataset</span>
-The dataset consists of photographs of a physical Uno deck. For each card, four variants were captured:
+The dataset consists of Self **Gathered photographs** of a physical Uno deck. For each card, four variants were captured:
 - **Full card**: The entire card is visible on a **white background**.
 - **Tilted angle**: The camera is positioned lower and tilted away from the top, captured on a **deep red color background** (often resembling maroon).
 - **Corner only**: Only a corner of the card is shown, on a **white background**.
 - **Half card**: Centered directly above with half the card visible, on a **white background**.
 
 These images are stored in the `./Sample Dataset/Sample Orignal Images/` folder.
+
+---
+### <span style="color: purple;">🖼️ Sample Images: Yellow Card Example</span>
+This section showcases the original four variants of a yellow Uno card and examples of its augmented versions.
+
+#### Original Variants
+| Full Card (White BG) | Tilted Angle (Deep Red BG) | Corner Only (White BG) | Half Card (White BG) |
+|----------------------|----------------------------|------------------------|----------------------|
+| <img src="./Sample%20Dataset/Sample%20Orignal%20Images/49.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/13.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/50.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/1.jpg" > |
+
+#### Augmented Examples (From Full Card only, as if I display for all the above its will become a gallery)
+
+| Original | Rotate -45° | Rotate 45° | Rotate 90° | Brightness (Darker) |
+|----------|-------------|------------|------------|----------------------|
+| <img src="./Sample%20Dataset/After%20Augmenation/49_Original.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_-45Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_45Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_90Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Adjust_Brightness_(Darker).jpg" width="150"> |
+
+| Brightness (Brighter) | Gaussian Noise | Affine Transform (30Â°) | Skew 15Â° |
+|------------------------|----------------|--------------------------|-----------|
+| <img src="./Sample%20Dataset/After%20Augmenation/49_Adjust_Brightness_(Brighter).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Add_Gaussian_Noise_(Stronger).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Affine_Transform_(Camera_Angle_30Â°).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Skew_15Â°_Camera_Angle.jpg" width="150"> |
 
 ---
 
@@ -54,25 +73,13 @@ The model was trained for 250 epochs with a learning rate of 0.01. Evaluation on
 
 ---
 
-### <span style="color: purple;">🖼️ Sample Images: Yellow Card Example</span>
-This section showcases the original four variants of a yellow Uno card and examples of its augmented versions.
-
-#### Original Variants
-| Full Card (White BG) | Tilted Angle (Deep Red BG) | Corner Only (White BG) | Half Card (White BG) |
-|----------------------|----------------------------|------------------------|----------------------|
-| <img src="./Sample%20Dataset/Sample%20Orignal%20Images/49.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/13.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/50.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/1.jpg" > |
-
-#### Augmented Examples (From Full Card only, as if I display for all the above its will become a gallery)
-
-| Original | Rotate -45° | Rotate 45° | Rotate 90° | Brightness (Darker) |
-|----------|-------------|------------|------------|----------------------|
-| <img src="./Sample%20Dataset/After%20Augmenation/49_Original.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_-45Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_45Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_90Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Adjust_Brightness_(Darker).jpg" width="150"> |
-
-| Brightness (Brighter) | Gaussian Noise | Affine Transform (30Â°) | Skew 15Â° |
-|------------------------|----------------|--------------------------|-----------|
-| <img src="./Sample%20Dataset/After%20Augmenation/49_Adjust_Brightness_(Brighter).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Add_Gaussian_Noise_(Stronger).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Affine_Transform_(Camera_Angle_30Â°).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Skew_15Â°_Camera_Angle.jpg" width="150"> |
+### <span style="color: gray;">📝 Notes</span>
+- The dataset is not included due to its size, but sample images are provided in `./Sample Dataset/`.
+- The ANN was implemented from scratch, showcasing a fully custom-built solution.
+- The model is saved as `model.pkl` for easy loading.
 
 ---
+
 
 ### <span style="color: black;">🛠️ Requirements</span>
 - Python 3.x
@@ -99,11 +106,6 @@ with open('model.pkl', 'rb') as f:
 
 ---
 
-### <span style="color: gray;">📝 Notes</span>
-- The dataset is not included due to its size, but sample images are provided in `./Sample Dataset/`.
-- The ANN was implemented from scratch, showcasing a fully custom-built solution.
-- The model is saved as `model.pkl` for easy loading.
 
----
 
 *Enjoy this custom-built Uno Card Classifier!*
