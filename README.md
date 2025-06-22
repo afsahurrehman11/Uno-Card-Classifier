@@ -2,7 +2,6 @@
 
 <p align="center">
   <a href="https://github.com/yourusername/yourrepo"><img src="https://img.shields.io/badge/GitHub-Repository-blue" alt="GitHub Repository"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green" alt="License"></a>
 </p>
 
 ---
