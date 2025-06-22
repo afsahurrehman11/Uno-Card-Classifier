@@ -60,7 +60,7 @@ This section showcases the original four variants of a yellow Uno card and examp
 #### Original Variants
 | Full Card (White BG) | Tilted Angle (Deep Red BG) | Corner Only (White BG) | Half Card (White BG) |
 |----------------------|----------------------------|------------------------|----------------------|
-| <img src="./Sample%20Dataset/Sample%20Orignal%20Images/49.jpg" width="200"> | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/13.jpg" width="200"> | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/50.jpg" width="200"> | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/1.jpg" width="200"> |
+| <img src="./Sample%20Dataset/Sample%20Orignal%20Images/49.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/13.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/50.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/1.jpg" > |
 
 #### Augmented Examples (From Full Card)
 | Rotate 45° | Adjust Brightness (Darker) | Add Gaussian Noise |
