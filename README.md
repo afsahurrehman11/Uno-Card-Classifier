@@ -62,10 +62,15 @@ This section showcases the original four variants of a yellow Uno card and examp
 |----------------------|----------------------------|------------------------|----------------------|
 | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/49.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/13.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/50.jpg" > | <img src="./Sample%20Dataset/Sample%20Orignal%20Images/1.jpg" > |
 
-#### Augmented Examples (From Full Card)
-| Rotate 45° | Adjust Brightness (Darker) | Add Gaussian Noise |
-|------------|----------------------------|--------------------|
-| <img src="./Sample%20Dataset/After%20Augmenation/yellow_1_full_rotate45.jpg" width="200"> | <img src="./Sample%20Dataset/After%20Augmenation/yellow_1_full_brightness_dark.jpg" width="200"> | <img src="./Sample%20Dataset/After%20Augmenation/yellow_1_full_noise.jpg" width="200"> |
+#### Augmented Examples (From Full Card only, as if I display for all the above its will become a gallery)
+
+| Original | Rotate -45° | Rotate 45° | Rotate 90° | Brightness (Darker) |
+|----------|-------------|------------|------------|----------------------|
+| <img src="./Sample%20Dataset/After%20Augmenation/49_Original.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_-45Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_45Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Rotate_90Â°.jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Adjust_Brightness_(Darker).jpg" width="150"> |
+
+| Brightness (Brighter) | Gaussian Noise | Affine Transform (30Â°) | Skew 15Â° |
+|------------------------|----------------|--------------------------|-----------|
+| <img src="./Sample%20Dataset/After%20Augmenation/49_Adjust_Brightness_(Brighter).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Add_Gaussian_Noise_(Stronger).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Affine_Transform_(Camera_Angle_30Â°).jpg" width="150"> | <img src="./Sample%20Dataset/After%20Augmenation/49_Skew_15Â°_Camera_Angle.jpg" width="150"> |
 
 ---
 
